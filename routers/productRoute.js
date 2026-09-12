@@ -1,7 +1,12 @@
 const express=require("express"); 
 const router=express.Router();
 
-router.get('/',getProducts);
+router.get('/',);
+router.post('/',async((req,res)=>{
+
+    
+}
+))
 
 
 module.exports=router

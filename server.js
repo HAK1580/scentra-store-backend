@@ -1,10 +1,10 @@
 const express=require("express");
-const app=express.json();
+const app=express();
 const port=3000;
+const connectDB=require('../scentra-perfumes-back-end/config/db');
+const 
 app.use(express.json());
-
-
-
+connectDB();
 
 
 
