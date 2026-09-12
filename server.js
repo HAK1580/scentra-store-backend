@@ -2,9 +2,11 @@ const express=require("express");
 const app=express();
 const port=3000;
 const connectDB=require('../scentra-perfumes-back-end/config/db');
-const 
+const productRoutes=require("./routes/productRoute")
 app.use(express.json());
 connectDB();
+
+app.use('/api/product',productRoutes);
 
 
 
